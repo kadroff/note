@@ -1,14 +1,19 @@
 .main {
   width: 100%;
   display: flex;
-  height: 400px;
+  height: 100%;
   border: 1px solid black;
 }
 
 .left-column {
   width: 30%;
-  display: flex;
   border-right: 1px solid black;
+}
+
+/* Seaction menu */
+
+.search {
+  display: flex;
 }
 
 .fas {
@@ -27,3 +32,14 @@ input[type=search] {
   height: 40px;
 }
 
+/* Section notes */
+
+.notes {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+li {
+  border-bottom: 1px solid black;
+}
