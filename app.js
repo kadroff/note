@@ -8,12 +8,8 @@ add_note.onclick = (function(){
   right_column.appendChild(name);
 
   create_note.onclick = (function(){
-    let value_title = title.value;
     let create_element = document.createElement("li");
-    create_element.innerHTML = '<h3>' + value_title + '</h3>';
-    note.appendChild(create_element);
-
-    let value_name = document.createElement("li");
+    create_element.innerHTML = '<h3>' + title.value + '</h3>' + '<p>' + name.value + '</p>';
     note.appendChild(create_element);
   });
 });
