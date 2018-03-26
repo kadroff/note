@@ -19,9 +19,18 @@ add_note.onclick = (function(){
     noteList[noteList_len] = list;
 
     let create_element = document.createElement("li");
-    create_element.innerHTML = '<input type="radio">' + '<h3>' + title.value + '</h3>' + '<p>' + name.value + '</p>';
-    note.appendChild(create_element); 
+  //  create_element.innerHTML = '<input type="radio">' + '<h3>' + title.value + '</h3>' + '<p>' + name.value + '</p>';
+  //  note.appendChild(create_element); 
+
+    checked();
+
+  function checked() {
+    for (key in noteList) {
+      if(list.check == true) {
+        create_element.innerHTML =  "<input id='checkbox' type='checkbox'> checked" +  title.value + '</h3>' + '<p>' + name.value + '</p>';
+      }else create_element.innerHTML = "<input id='checkbox' type='checkbox'>" +  title.value + '</h3>' + '<p>' + name.value + '</p>';  
+      note.appendChild(create_element); 
+    }
+  }s
   });
 });
-
-
