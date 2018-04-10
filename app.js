@@ -5,7 +5,7 @@ let note = '';
 
 const editor = document.querySelector('#editor');
 const right_column = document.querySelector('#right_column');
-const notesList = document.querySelector('#noteList');
+const notesList = document.querySelector('#notesList');
 
 editor.onkeyup = () => {
   note = editor.value;
