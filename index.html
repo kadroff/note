@@ -18,24 +18,17 @@
         <i class="fas fa-sticky-note"></i>
       </div>
 
-      <ul class="notes" id="note">
-        <li>
-            <h3>Почистить зубы</h3>
-            <p>Каждое утро нужно чистить зубы</p>
-        </li>
-        <li>
-            <h3>Почистить зубы</h3>
-            <p>Каждое утро нужно чистить зубы</p>
-        </li>
+      <ul class="notes" id="notesList">
       </ul>  
-    </div>
 
-    <div id="right_column">
-      <input type="button" id="add_note" value="+">
-      <input type="button" id="create_note" value="Добавить">
-      <input type="button" id="remove_note" value="Удалить">
-    </div>
+      <div id="right_column">
+        <!-- <input type="button" id="add_note" value="+"> -->
+        <textarea name="note" id="editor"></textarea>
+        <input type="submit" onClick="newNote()" id="create_note" value="Добавить">
+        <input type="button"  id="remove_note" value="Удалить">
+      </div>
   </div>
   <script src="app.js"></script>
 </body>
+ 
 </html>
